@@ -32,7 +32,7 @@ public class StudentController {
     }
 
     //create a student
-    @RequestMapping(value = "/students", method = RequestMethod.POST)
+    //@RequestMapping(value = "/students", method = RequestMethod.POST)
     @PostMapping("/students")
     public AjaxResponse postStudent(@RequestBody Student student){
 

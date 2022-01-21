@@ -12,7 +12,7 @@ public interface CourseService {
     public void saveCourse(Course course);
     void deleteCourse(int id);
     void updateCourse(Course course);
-    Student getStudent(int id);
-    List<Student> getAll();
+    Course getCourse(int id);
+    List<Course> getAll();
 
 }
