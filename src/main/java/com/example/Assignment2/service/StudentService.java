@@ -1,15 +1,17 @@
 package com.example.Assignment2.service;
 
 import com.example.Assignment2.domain.Student;
-import com.example.Assignment2.domain.StudentResponse;
+
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public interface StudentService {
-    StudentResponse getAllStudent();
-    StudentResponse getById(String id);
-    StudentResponse createStudent(int student_id, String first_name, String last_name, String GPA);
-    StudentResponse deleteById(String id);
-    StudentResponse updateById(String id);
+     public void saveStudent(Student student);
+     void deleteStudent(int id);
+     void updateStudent(Student student);
+     Student getStudent(int id);
+     List<Student> getAll();
 
 }

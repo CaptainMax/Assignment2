@@ -7,7 +7,7 @@ public class StudentDTO {
    // private String GPA;
 
     public StudentDTO(Student s){
-        this(s.getStudent_id(), s.getFirst_name(), s.getLast_name());
+        this(s.getId(), s.getFirst_name(), s.getLast_name());
     }
     public StudentDTO(int student_id, String first_name, String last_name) {
         this.student_id = student_id;
